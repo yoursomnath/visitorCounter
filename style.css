@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sora:wght@500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #eef1fb;
+  height: 100vh;
+  overflow: hidden;
+}
+.container{
+  position: absolute;
+  height: 800px;
+  width: 500px;
+  background-image: url("bg2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  background-size: 100%;
+  animation: ani 5s linear infinite;
+  display: flex;
+}
+.visitor-div{
+  color: white;
+  font-size: 1em;
+  rotate: -7deg;
+  margin-left: 105px;
+  margin-top: 200px;
+  position: absolute;
+  display: flex;
+  grid-gap: 10px;
+  flex-direction: column;
+}
+@keyframes ani {
+  0%,100%{
+    transform: translateX(10px)translateY(10px);
+  }
+  50%{
+
+    transform: translateX(20px)translateY(20px);
+  }
+}
+.visitor-div p{
+  font-size: 20px;
+  color: black;
+}
+.visitor-number{
+  font-size: 30px;
+  text-align: center;
+  background: black;
+  padding: 10px;
+}
+.bg-effect{
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  transform: rotate(40deg);
+  left: -10%;
+  top:   -30%;
+  background: #ffd72c;
+}
+.bg-effect:nth-child(2){
+  background: #404ef8;
+  top: 30%;
+  left: 90%;
+}
+
+
+@media screen and(max-width: 800px){
+  .bg-effect{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    transform: rotate(40deg);
+    left: -35%;
+    top:   -30%;
+    background: red;
+  /*  background: #ffd72c;*/
+}
+
+}
+@media screen and (max-width: 800px){
+  .bg-effect{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    transform: rotate(40deg);
+    left: -35%;
+    top:   -30%;
+    background: #ffd72c;
+}
+}
